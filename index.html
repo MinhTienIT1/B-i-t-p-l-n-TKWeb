@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MiniMart – Siêu thị mini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#/home">MiniMart</a>
+<button id="menuBtn" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Mở menu">☰</button>
+<nav id="menu">
+<a href="#/home" data-v="home">Trang chủ</a><a href="#/products" data-v="products">Sản phẩm</a>
+<a href="#/cart" data-v="cart">Giỏ hàng (<span id="cb">0</span>)</a><a href="#/member" data-v="member">Hội viên &amp; Ưu đãi</a>
+</nav></div></header>
+<main class="wrap" id="app"></main>
+<footer><div class="wrap">© 2026 MiniMart – Đồ án thiết kế web. Dữ liệu chỉ là mẫu.</div></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
